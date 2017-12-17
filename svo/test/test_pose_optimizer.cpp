@@ -52,7 +52,7 @@ class PoseOptimizerTest {
     // set pose
     Eigen::Vector3d t_w_ref(0.1131, 0.1131, 2.0000);
     Eigen::Quaterniond q_w_ref(0.0, 0.8227, 0.2149, 0.0);
-    frame_->T_f_w_ = Sophus::SE3(q_w_ref, t_w_ref).inverse();
+    frame_->T_f_w_ = Sophus::SE3d(q_w_ref, t_w_ref).inverse();
 
     // load ground-truth depth
     vk::blender_utils::loadBlenderDepthmap(dataset_dir + "/depth/frame_000002_0.depth", *cam_, depthmap_);
