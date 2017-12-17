@@ -21,6 +21,7 @@
 #include <svo/point.h>
 #include <vikit/robust_cost.h>
 #include <vikit/math_utils.h>
+#include <Eigen/Dense>
 
 namespace svo {
 namespace pose_optimizer {

@@ -19,6 +19,8 @@
 #include <svo/point.h>
 #include <svo/frame.h>
 #include <svo/feature.h>
+#include <Eigen/Dense>
+
 
 namespace svo {
 

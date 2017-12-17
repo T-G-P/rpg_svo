@@ -23,6 +23,7 @@
 #include <vikit/abstract_camera.h>
 #include <vikit/vision.h>
 #include <vikit/math_utils.h>
+#include <Eigen/Dense>
 
 namespace svo {
 
