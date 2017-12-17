@@ -92,7 +92,7 @@ void PoseOptimizerTest::test(const Vector3d& pose_disturbance, double pixel_sigm
     (*it)->px += Vector2d(vk::Sample::gaussian(pixel_sigma2), vk::Sample::gaussian(pixel_sigma2));
     (*it)->f = frame_->c2f((*it)->px);
   }
-  frame_->T_f_w_ = frame_->T_f_w_*SE3(Matrix3d::Identity(), pose_disturbance);
+  frame_->T_f_w_ = frame_->T_f_w_*SE3d(Matrix3d::Identity(), pose_disturbance);
   double estimated_scale, error_init, error_final;
   size_t num_obs;
   pose_optimizer::optimizeGaussNewton(
